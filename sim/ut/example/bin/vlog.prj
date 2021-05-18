@@ -1,0 +1,36 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../src/2_rtl/obj_fd/obj_fd.v" \
+"../../../../src/2_rtl/obj_fd/obj_fc.v" \
+"../../../../src/2_rtl/obj_fd/obj_cd.v" \
+"../../../../src/2_rtl/obj_fd/obj_fe.v" \
+"../../../../src/2_rtl/obj_fd/obj_im.v" \
+"../../../../src/2_rtl/img_pp/img_lb.v" \
+"../../../../src/2_rtl/base/sync_bram_sdp.v" \
+"../../../../src/2_rtl/base/args_delay.v" \
+"../../../../src/2_rtl/base/args_sync.v" \
+"../../../../src/2_rtl/base/args_counter.v" \
+"../../../../src/2_rtl/base/args_distance.v" \
+"../../../../src/3_ip/bram_w324_d512/sim/bram_w324_d512.v" \
+"../../../../sim/ip/axis_fifo_32w16d.v" \
+"../../../../sim/ip/axis_w72_converter_w24.v" \
+"../../../../sim/ip/dist_fifo_32w16d.v" \
+"../../../../sim/ip/dist_mem_32w16d_dp.v" \
+"../../../../sim/ip/dist_mem_gen_v8_0.v" \
+"../../../../sim/ip/fifo_generator_v13_2_rfs.v" \
+"../../../../sim/ip/blk_mem_gen_v8_4.v" \
+"../../../../sim/ip/axis_dwidth_converter_v1_1_vl_rfs.v" \
+"../../../../sim/ip/axis_register_slice_v1_1_vl_rfs.v" \
+"../../../../sim/ip/axis_infrastructure_v1_1_vl_rfs.v" \
+"../../../../sim/ip/axis_data_fifo_v2_0_vl_rfs.v" \
+"../../../../sim/ip/fifo_generator_vlog_beh.v" \
+"../../../../sim/ip/bram_32w16d_dp.v" \
+
+sv xil_defaultlib  \
+"../tb/tb_top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "../tb/glbl.v"
+
+# Do not sort compile order
+nosort

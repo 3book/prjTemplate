@@ -1,0 +1,581 @@
+#-----------------------------------------------------------
+# xsim v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov 10 21:48:21 2019
+# Process ID: 110698
+# Current directory: /mnt/hgfs/vmware_share/odtu/sim/ut/obj_fe/work
+# Command line: xsim -log simulate.log -mode tcl -source {xsim.dir/tb_top/xsim_script.tcl}
+# Log file: /mnt/hgfs/vmware_share/odtu/sim/ut/obj_fe/work/simulate.log
+# Journal file: /mnt/hgfs/vmware_share/odtu/sim/ut/obj_fe/work/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/tb_top/xsim_script.tcl
+# xsim {tb_top} -autoloadwcfg -tclbatch {/mnt/hgfs/vmware_share/odtu/sim/ut/obj_fe/bin/tb_top.tcl} -key {Behavioral:sim_1:Functional:tb_top}
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config /mnt/hgfs/vmware_share/odtu/sim/ut/obj_fe/work/tb_top.wcfg
+source /mnt/hgfs/vmware_share/odtu/sim/ut/obj_fe/bin/tb_top.tcl
+## set curr_wave [current_wave_config]
+## if { [string length $curr_wave] == 0 } {
+##   if { [llength [get_objects]] > 0} {
+##     add_wave_divider TB
+##     add_wave /
+##     add_wave_divider DUT
+##     add_wave /DUT
+##     set_property needs_save false [current_wave_config]
+##   } else {
+##      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+##   }
+## }
+## run all
+Block Memory Generator module tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+mem_line=101011110000000000000100111111111110001010100001
+mem_line=000000000000100000001010001010101000111111111001
+x,y=         0, 0
+Area=      1
+mRect_l= 0, 0----
+mRect_r= 0, 0----
+mRect_t= 0, 0----
+mRect_b= 0, 0----
+x,y=         2, 0
+Area=      1
+mRect_l= 2, 0----
+mRect_r= 2, 0----
+mRect_t= 2, 0----
+mRect_b= 2, 0----
+x,y=         7, 0
+Area=      4
+mRect_l= 4, 0----
+mRect_r= 7, 0----
+mRect_t= 7, 0----
+mRect_b= 4, 0----
+blk_mem_gen_v8_4_3 collision detected at time: 1425000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 4, B  read address: 4
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1425.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1425.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1425.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1425.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1425.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1425.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1425.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1425.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1425.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+blk_mem_gen_v8_4_3 collision detected at time: 1445000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 4, B  read address: 4
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1445.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1445.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1445.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1445.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1445.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1445.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1445.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1445.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1445.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+blk_mem_gen_v8_4_3 collision detected at time: 1465000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 4, B  read address: 4
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1465.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1465.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1465.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1465.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1465.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1465.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1465.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1465.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1465.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+blk_mem_gen_v8_4_3 collision detected at time: 1485000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 4, B  read address: 4
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1485.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1485.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1485.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1485.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1485.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1485.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1485.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1485.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 1485.000 ns.
+A read was performed on address 009f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+mem_line=101010010001010000010001000000000000000000000001
+x,y=        32, 1
+Area=     15
+mRect_l=24, 0----
+mRect_r=34, 0----
+mRect_t=34, 0----
+mRect_b=26, 1----
+x,y=        44, 1
+Area=     12
+mRect_l=36, 1----
+mRect_r=44, 1----
+mRect_t=42, 0----
+mRect_b=36, 1----
+mem_line=101000101010001000100100100000100010011111111001
+x,y=         4, 2
+Area=      1
+mRect_l= 4, 2----
+mRect_r= 4, 2----
+mRect_t= 4, 2----
+mRect_b= 4, 2----
+mem_line=101000000100100101001010010000010100010000001000
+blk_mem_gen_v8_4_3 collision detected at time: 3455000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 12, B  read address: 12
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 3455.000 ns.
+A read was performed on address 025f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 3455.000 ns.
+A read was performed on address 025f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 3455.000 ns.
+A read was performed on address 025f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 3455.000 ns.
+A read was performed on address 025f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 3455.000 ns.
+A read was performed on address 025f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 3455.000 ns.
+A read was performed on address 025f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 3455.000 ns.
+A read was performed on address 025f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 3455.000 ns.
+A read was performed on address 025f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 3455.000 ns.
+A read was performed on address 025f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+x,y=4294967294, 4
+Area=      4
+mRect_l=47, 0----
+mRect_r=47, 3----
+mRect_t=47, 0----
+mRect_b=47, 3----
+mem_line=101000100001010010010001001000001000010111101000
+mem_line=000000010000100000100000100100010100010100101000
+x,y=         0, 5
+Area=      4
+mRect_l= 0, 2----
+mRect_r= 0, 5----
+mRect_t= 0, 2----
+mRect_b= 0, 5----
+x,y=         2, 5
+Area=      4
+mRect_l= 2, 2----
+mRect_r= 2, 5----
+mRect_t= 2, 2----
+mRect_b= 2, 5----
+blk_mem_gen_v8_4_3 collision detected at time: 4755000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 15, B  read address: 15
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 4755.000 ns.
+A read was performed on address 02bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 4755.000 ns.
+A read was performed on address 02bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 4755.000 ns.
+A read was performed on address 02bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 4755.000 ns.
+A read was performed on address 02bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 4755.000 ns.
+A read was performed on address 02bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 4755.000 ns.
+A read was performed on address 02bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 4755.000 ns.
+A read was performed on address 02bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 4755.000 ns.
+A read was performed on address 02bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 4755.000 ns.
+A read was performed on address 02bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+mem_line=000000001000000010010001000000100010010111101000
+x,y=        12, 6
+Area=      4
+mRect_l=11, 5----
+mRect_r=13, 5----
+mRect_t=12, 4----
+mRect_b=12, 6----
+x,y=        27, 6
+Area=     22
+mRect_l= 6, 3----
+mRect_r=27, 6----
+mRect_t=21, 0----
+mRect_b=27, 6----
+mem_line=000010000100000101001010010000000000010000001000
+x,y=        34, 7
+Area=      9
+mRect_l=30, 3----
+mRect_r=34, 7----
+mRect_t=34, 3----
+mRect_b=30, 7----
+x,y=        42, 7
+Area=     10
+mRect_l=39, 5----
+mRect_r=42, 7----
+mRect_t=42, 5----
+mRect_b=39, 7----
+mem_line=001111100010001000100100101000000010011111111000
+mem_line=000010000001010000010001000100000100000000000000
+blk_mem_gen_v8_4_3 collision detected at time: 6965000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 19, B  read address: 19
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 6965.000 ns.
+A read was performed on address 033f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 6965.000 ns.
+A read was performed on address 033f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 6965.000 ns.
+A read was performed on address 033f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 6965.000 ns.
+A read was performed on address 033f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 6965.000 ns.
+A read was performed on address 033f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 6965.000 ns.
+A read was performed on address 033f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 6965.000 ns.
+A read was performed on address 033f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 6965.000 ns.
+A read was performed on address 033f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 6965.000 ns.
+A read was performed on address 033f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+x,y=        21, 9
+Area=     12
+mRect_l=18, 6----
+mRect_r=24, 6----
+mRect_t=21, 3----
+mRect_b=21, 9----
+x,y=        44, 9
+Area=     26
+mRect_l=37, 3----
+mRect_r=44, 9----
+mRect_t=44, 3----
+mRect_b=37, 9----
+mem_line=000000111100100000001010000010001000000000000000
+x,y=         4,10
+Area=      7
+mRect_l= 2, 9----
+mRect_r= 6, 9----
+mRect_t= 4, 8----
+mRect_b= 4,10----
+mem_line=000010011110000000000100000001010000111111100000
+mem_line=000001001111100001000000000000100000001111111000
+mem_line=000000100111110010100000001000000000000001111111
+x,y=        30,13
+Area=     29
+mRect_l= 6, 5----
+mRect_r=34, 9----
+mRect_t= 6, 5----
+mRect_b=30,13----
+mem_line=111000010011100100010000010100010000000000011111
+mem_line=111110001001001000001000100010101000000000000000
+x,y=4294967294,16
+Area=     26
+mRect_l=36,12----
+mRect_r=47,15----
+mRect_t=42,12----
+mRect_b=43,15----
+mem_line=111111000100010000000101000001000000000000000000
+x,y=        11,16
+Area=     22
+mRect_l= 6,11----
+mRect_r=13,14----
+mRect_t= 9,11----
+mRect_b=11,16----
+Memory Collision Error on RAMB18E1 : tb_top.DUT.label_map_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_dp_bl.bram18_tdp_bl.gen_tdp.INT_RAMB_TDP.chk_for_col_msg at simulation time 11695.000 ns.
+A read was performed on address 021f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+mem_line=111111110010100000000010000000000000000000000000
+mem_line=000000000001000000000000000000000000000000000000
+x,y=         7,18
+Area=     22
+mRect_l= 0,15----
+mRect_r= 7,18----
+mRect_t= 2,15----
+mRect_b= 0,18----
+mem_line=000000000000000000000000011111111111000000000000
+x,y=        11,19
+Area=     29
+mRect_l= 4,12----
+mRect_r=32,16----
+mRect_t= 4,12----
+mRect_b=11,19----
+mem_line=001111111111100001000000010000000001000000000000
+blk_mem_gen_v8_4_3 collision detected at time: 14215000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 22, B  read address: 22
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14215.000 ns.
+A read was performed on address 045f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14215.000 ns.
+A read was performed on address 045f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14215.000 ns.
+A read was performed on address 045f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14215.000 ns.
+A read was performed on address 045f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14215.000 ns.
+A read was performed on address 045f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14215.000 ns.
+A read was performed on address 045f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14215.000 ns.
+A read was performed on address 045f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14215.000 ns.
+A read was performed on address 045f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14215.000 ns.
+A read was performed on address 045f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+mem_line=001001000000000010000000010111111101000000000000
+blk_mem_gen_v8_4_3 collision detected at time: 14625000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 23, B  read address: 23
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14625.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14625.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14625.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14625.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14625.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14625.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14625.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14625.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14625.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+blk_mem_gen_v8_4_3 collision detected at time: 14655000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 23, B  read address: 23
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14655.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14655.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14655.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14655.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14655.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14655.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14655.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14655.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 14655.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+mem_line=011001001111001100000000010100000101000000000000
+blk_mem_gen_v8_4_3 collision detected at time: 15515000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 25, B  read address: 25
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15515.000 ns.
+A read was performed on address 04bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15515.000 ns.
+A read was performed on address 04bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15515.000 ns.
+A read was performed on address 04bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15515.000 ns.
+A read was performed on address 04bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15515.000 ns.
+A read was performed on address 04bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15515.000 ns.
+A read was performed on address 04bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15515.000 ns.
+A read was performed on address 04bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15515.000 ns.
+A read was performed on address 04bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15515.000 ns.
+A read was performed on address 04bf (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+mem_line=000000110000110000000000010101110101000000000000
+blk_mem_gen_v8_4_3 collision detected at time: 15955000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 23, B  read address: 23
+Memory Collision Error on RAMB18E1 : tb_top.DUT.label_map_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_dp_bl.bram18_tdp_bl.gen_tdp.INT_RAMB_TDP.chk_for_col_msg at simulation time 15955.000 ns.
+A read was performed on address 026f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15955.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15955.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15955.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15955.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15955.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15955.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15955.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15955.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 15955.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+blk_mem_gen_v8_4_3 collision detected at time: 16015000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 23, B  read address: 23
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16015.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16015.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16015.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16015.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16015.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16015.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16015.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16015.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16015.000 ns.
+A read was performed on address 047f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+mem_line=000000000000000000000000010101000101000000000000
+x,y=        13,24
+Area=     28
+mRect_l= 1,23----
+mRect_r=17,21----
+mRect_t=17,21----
+mRect_b= 6,24----
+blk_mem_gen_v8_4_3 collision detected at time: 16815000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 28, B  read address: 28
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16815.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16815.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16815.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16815.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16815.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16815.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16815.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16815.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 16815.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+mem_line=000000000000000000000000010101111101000000000000
+mem_line=000000000000000000000000010100000001000000000000
+blk_mem_gen_v8_4_3 collision detected at time: 18075000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 28, B  read address: 28
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 18075.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 18075.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 18075.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 18075.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 18075.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 18075.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 18075.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 18075.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 18075.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+mem_line=000000000000000000000000010111111111000000000000
+mem_line=000000000000000000000000010000000000000000000000
+blk_mem_gen_v8_4_3 collision detected at time: 19335000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 28, B  read address: 28
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 19335.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 19335.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 19335.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 19335.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 19335.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 19335.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 19335.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 19335.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 19335.000 ns.
+A read was performed on address 051f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+mem_line=011111110010101010000000011111111111111000000000
+mem_line=101010101001111100000000000000000000000000000000
+blk_mem_gen_v8_4_3 collision detected at time: 20365000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 29, B  read address: 29
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20365.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20365.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20365.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20365.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20365.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20365.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20365.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20365.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20365.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+blk_mem_gen_v8_4_3 collision detected at time: 20385000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 29, B  read address: 29
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20385.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20385.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20385.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20385.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20385.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20385.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20385.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20385.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20385.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+blk_mem_gen_v8_4_3 collision detected at time: 20405000, Instance: tb_top.DUT.info_ram_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst, A write address: 29, B  read address: 29
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[0].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20405.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[1].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20405.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[2].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20405.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[3].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20405.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[4].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20405.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[5].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20405.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[6].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20405.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[7].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20405.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+Memory Collision Error on RAMB18E1 : tb_top.DUT.cca_info_ram_inst.HORIZONTAL[8].VERTICAL[0].BRAM_SDP_MACRO_inst.genblk3.bram18_sdp_bl_3.bram18_sdp_bl_3.gen_sdp.gen_wide.INT_RAMB_SDP.chk_for_col_msg at simulation time 20405.000 ns.
+A read was performed on address 053f (hex) of port A while a write was requested to the same address on port B.  The write will be successful however the read value on port A is unknown until the next CLKA cycle.
+x,y=        38,30
+Area=     74
+mRect_l=25,20----
+mRect_r=38,30----
+mRect_t=35,20----
+mRect_b=25,30----
+x,y=         8,31
+Area=     12
+mRect_l= 0,31----
+mRect_r= 8,31----
+mRect_t= 7,30----
+mRect_b= 0,31----
+x,y=        15,31
+Area=      9
+mRect_l=10,30----
+mRect_r=16,30----
+mRect_t=16,30----
+mRect_b=11,31----
+$finish called at time : 30715 ns : File "/mnt/hgfs/vmware_share/odtu/sim/ut/obj_fe/tb/tb_top.sv" Line 117
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Nov 10 21:48:34 2019...

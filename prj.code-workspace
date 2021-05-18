@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "doc"
+		},
+		{
+			"path": "prj"
+		},
+		{
+			"path": "sim"
+		},
+		{
+			"path": "src"
+		},
+		{
+			"path": "cmd"
+		}
+	],
+	"settings": {}
+}
